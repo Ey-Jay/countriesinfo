@@ -75,7 +75,7 @@ function CountryInfo({ code }) {
           </div>
         </>
       )}
-      {data.country.currrency && (
+      {data.country.currency.length > 0 && (
         <p style={{ padding: '0 20px' }}>
           if you want to go shopping, <i>make sure</i> you have some{' '}
           <b>{data.country.currency}</b> on you. That is the widely used
