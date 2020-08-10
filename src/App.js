@@ -13,6 +13,7 @@ import { gql, useQuery } from '@apollo/client';
 
 import Header from './components/Header';
 import CountryInfo from './components/CountryInfo';
+import Footer from './components/Footer';
 import './App.css';
 
 const GET_COUNTRIES = gql`
@@ -33,7 +34,7 @@ const darkTheme = createMuiTheme({
 const useStyles = makeStyles((theme) => ({
   formControl: {
     margin: theme.spacing(5),
-    minWidth: 300,
+    minWidth: 250,
     textAlign: 'left',
   },
 }));
@@ -70,6 +71,7 @@ function App() {
             {selectedCountry && <CountryInfo code={selectedCountry} />}{' '}
           </div>
         </div>
+        <Footer />
       </ThemeProvider>
     </>
   );

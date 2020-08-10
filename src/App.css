@@ -1,0 +1,11 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  box-shadow: 0 90px 50px 70px rgba(0, 0, 0, 0.7);
+}
+
+.footer a {
+  color: #fff;
+}
